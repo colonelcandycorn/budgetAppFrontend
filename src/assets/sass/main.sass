@@ -1,0 +1,68 @@
+// Custom Bootstrap theme overrides
+$light-shades: #F0F0EF // use this color as background for dark on light or text color of an inverted design
+$light-accent: #6FC3DC // use this color as accent for dark on light
+$main-brand-color: #286B91 // use this color as main brand color
+$dark-accent: #507BAF // use this color as accent for light on dark
+$dark-shades: #1A2D4D // use this color text color for dark on light designs or background for inverted designs
+
+// Override Bootstrap
+$body-bg: $light-shades
+$text-color: $dark-shades
+$body-color: $dark-shades
+
+$primary: $main-brand-color
+$secondary: $light-accent
+$info: $dark-shades
+$success: #419b64
+$warning: #bf8b2c
+$danger: #f44336
+
+$light: $light-shades
+$dark: $dark-shades
+
+
+
+// Typography
+$headings-color: $dark-shades // Heading text color
+$link-color: $main-brand-color // Link color
+$link-hover-color: darken($main-brand-color, 10%) // Link hover color
+
+// Backgrounds
+$component-active-bg: $light-accent // Active component background color
+$component-hover-bg: lighten($light-accent, 10%) // Hover component background color
+
+// Borders
+$border-color: lighten($dark-shades, 20%) // Default border color
+$input-border-color: lighten($dark-shades, 20%) // Input border color
+
+// Buttons
+$btn-primary-bg: $main-brand-color // Primary button background
+$btn-secondary-bg: $light-accent // Secondary button background
+$btn-info-bg: $info // Info button background
+$btn-success-bg: $success // Success button background
+$btn-warning-bg: $warning // Warning button background
+$btn-danger-bg: $danger // Danger button background
+
+// Forms
+$input-bg: $light-shades // Input background color
+$input-color: $dark-shades // Input text color
+$input-placeholder-color: lighten($dark-shades, 40%) // Placeholder text color
+
+// Alerts
+$alert-bg-level: 50% // Background lightness level for alerts
+$alert-border-level: 60% // Border lightness level for alerts
+$alert-color-level: 20% // Text color lightness level for alerts
+
+// Tables
+$table-bg: $light-shades // Table background color
+$table-border-color: lighten($dark-shades, 20%) // Table border color
+$table-hover-bg: lighten($light-accent, 40%) // Table row hover background color
+
+// Navbar
+$navbar-color: $light-shades // Navbar text color
+$navbar-bg: $dark-shades // Navbar background color
+$navbar-border-color: darken($dark-shades, 10%) // Navbar border color
+$navbar-brand-color: $main-brand-color // Navbar brand color
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap"
